@@ -1,13 +1,16 @@
+/* universal selector, define the whole page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* element selector, define the body section color*/
 body {
     background-color: #d9dcd6;
 }
 
+/* class selector */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +18,18 @@ body {
     color: #ffffff;
 }
 
+/* element selector, to select h1 element under the parent with a class of header*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* change the color of 'seo' in the word horiseon */
+header h1 .seo {
     color: #d9dcd6;
 }
 
+/* element selector, to style section under the parent with a class of header*/
 .header section {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,10 +38,7 @@ body {
     font-size: 20px;
 }
 
-.header section ul {
-    list-style-type: none;
-}
-
+/* element selector, to style li under the parent with a class of header/selection/ul */
 .header section ul li {
     display: inline-block;
     margin-left: 25px;
@@ -71,6 +74,7 @@ p {
     margin-left: 20px;
 }
 
+/* the following section starts with ".benefits" are to style the contents within a parent with a class of ".benefits"*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -98,6 +102,7 @@ p {
     max-width: 150px;
 }
 
+/* the next 3 class selectors below are for styling of the bottom left sections, although they are the same, seperating them could be useful for future individual changes */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -125,6 +130,7 @@ p {
     color: #ffffff;
 }
 
+/* same logic as above section */
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -137,6 +143,7 @@ p {
     max-height: 200px;
 }
 
+/* same logic as above section */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -152,13 +159,13 @@ p {
     font-size: 36px;
 }
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
