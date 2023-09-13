@@ -1,4 +1,4 @@
-/* universal selector, define the whole page */
+/* universal selector, define the whole page with 0 padding and margin */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #d9dcd6;
 }
 
-/* class selector */
+/* class selector, define the header class with 20px padding, desire fonts, backgound color and word color */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,7 +18,7 @@ body {
     color: #ffffff;
 }
 
-/* element selector, to select h1 element under the parent with a class of header*/
+/* element selector, to select h1 element under header class, change the display style to inline-block, font size to 48px*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -29,7 +29,7 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-/* element selector, to style section under the parent with a class of header*/
+/* element selector, to define header class, section tag with top padding 15px, right margin 20px, float to the right, certain fonts and 20px font size*/
 .header section {
     padding-top: 15px;
     margin-right: 20px;
@@ -38,43 +38,72 @@ header h1 .seo {
     font-size: 20px;
 }
 
-/* element selector, to style li under the parent with a class of header/selection/ul */
+/* element selector, to define the li under header class/section/ul with inline block display and left margin of 25px*/
 .header section ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* element selector, define <a> tag color*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* element selector, define <p> tag font size*/
 p {
     font-size: 17px;
 }
 
+/* class selector, define this class with 800px height, bottom margin 25px, and 100% width all time */
 .hero {
     height: 800px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
+/* define this class with box float to the left and with right margin of 25px */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* define this class with box float to the right and with left margin of 25px */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* define this class with 75% of the width, inline-block display, and left margin of 20px */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* the following section starts with ".benefits" are to style the contents within a parent with a class of ".benefits"*/
+/* define article tag under the content class with bottom margin 20px, 50px padding, 300px height, certain fonts, background color and word color*/
+.content article {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* the image under article under class content with max height of 200px */
+.content article img {
+    max-height: 200px;
+}
+
+/* the h2 title under article under class content with 20px bottom margin, and 36px font size */
+.content article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* class benefits defines with 20px margin to the right, 20px padding, elements must be removed under floating elements, floats to the right,
+20% width, 100%height, certain fonts, and a background color*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,80 +115,27 @@ p {
     background-color: #2589bd;
 }
 
+/* define article under class benefits with bottom margin of 32px, and a certain color */
 .benefits article{
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* define h3 under article under class benefits with bottom margin of 10px, and central aligned*/
 .benefits article h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* define image under article under class benefits with block deisplay , top and bottom margin of 10px, and even spacing of lefe and right,
+and max width 150px */
 .benefits article img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* the next 3 class selectors below are for styling of the bottom left sections, although they are the same, seperating them could be useful for future individual changes */
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* same logic as above section */
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* same logic as above section */
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* same logic as above section */
+/* define footer with 30px padding, lements must be removed under floating elements, certain fonts, and central aligned*/
 footer {
     padding: 30px;
     clear: both;
@@ -167,6 +143,7 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+/* define h4 under the footer element with 20px font size */
+footer h4 {
     font-size: 20px;
 }
