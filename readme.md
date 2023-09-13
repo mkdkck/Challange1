@@ -12,7 +12,14 @@ To review the given HTML and assets for a better SEO results. This is a version 
 
 ## Installation
 
-N/A
+open and view the contents on https://mkdkck.github.io/Refactor-Horiseon/
+
+the page should show like the following pic:
+<img src="./assets/images/Horiseon 1.png" alt=" Horiseon page section1" width= 100%>
+<img src="./assets/images/Horiseon 2.png" alt=" Horiseon page section2" width= 100%>
+<img src="./assets/images/Horiseon 3.png" alt=" Horiseon page section3" width= 100%>
+
+HTML & CSS codes can be examined on https://github.com/mkdkck/Refactor-Horiseon
 
 ## Usage
 
